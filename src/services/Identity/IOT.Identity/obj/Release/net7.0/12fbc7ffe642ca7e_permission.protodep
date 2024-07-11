@@ -1,0 +1,2 @@
+obj\Release\net7.0\Protos/Permission.cs \
+obj\Release\net7.0\Protos/PermissionGrpc.cs: Protos/permission.proto

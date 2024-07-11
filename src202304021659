@@ -1,0 +1,6 @@
+[2023-04-02 16:59:11.124 +04:30  INF]  Now listening on: http://localhost:6005
+[2023-04-02 16:59:11.129 +04:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-04-02 16:59:11.129 +04:30  INF]  Hosting environment: Development
+[2023-04-02 16:59:11.129 +04:30  INF]  Content root path: P:\Platform\src\services\Identity\IOT.Identity
+[2023-04-02 16:59:47.548 +04:30 982801cb-28c2-4b41-922d-9116df9827e0 WRN]  The foreign key property 'UserRefreshToken.UserId1' was created in shadow state because a conflicting property with the simple name 'UserId' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+[2023-04-02 16:59:49.693 +04:30 982801cb-28c2-4b41-922d-9116df9827e0 INF]  User a with ID: 'IOT.Identity.Domain.Core.UserId login with Ip 192.168.1.200.'

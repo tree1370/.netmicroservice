@@ -1,0 +1,317 @@
+[2023-05-05 19:29:23.446 +03:30  INF]  Now listening on: http://localhost:6005
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 19:29:23.450 +03:30  INF]  Application started. Press Ctrl+C to shut down.
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 19:29:23.451 +03:30  INF]  Hosting environment: Development
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 19:29:23.451 +03:30  INF]  Content root path: P:\Platform\src\services\Identity\IOT.Identity
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 19:32:58.204 +03:30 062043a9-bdf8-404d-9d0a-4562c92f37fc INF]  HTTP GET / responded 404 in 0.3282 ms
+ Ip Address Client: ::1 RequestScheme : http RequestHost : localhost:6005 RequestMethod : GET RequestPath : / StatusCode : 404[2023-05-05 20:58:49.831 +03:30  INF]  Now listening on: http://localhost:6005
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 20:58:49.836 +03:30  INF]  Application started. Press Ctrl+C to shut down.
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 20:58:49.836 +03:30  INF]  Hosting environment: Development
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 20:58:49.836 +03:30  INF]  Content root path: P:\Platform\src\services\Identity\IOT.Identity
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 20:59:48.842 +03:30 febc5ac0-5e2b-4a8a-a1d2-a788ca09fbf1 INF]  HTTP GET / responded 404 in 0.5195 ms
+ Ip Address Client: ::1 RequestScheme : http RequestHost : localhost:6005 RequestMethod : GET RequestPath : / StatusCode : 404[2023-05-05 21:00:26.707 +03:30 08923f7c-a6fc-47ef-8a79-554b1a5967ae ERR]  HTTP GET /api/Authenticate/string responded 500 in 21566.2075 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ Ip Address Client: ::1 RequestScheme : http RequestHost : localhost:6005 RequestMethod : GET RequestPath : /api/Authenticate/string StatusCode : 500[2023-05-05 21:00:27.831 +03:30 08923f7c-a6fc-47ef-8a79-554b1a5967ae ERR]  An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in P:\Platform\src\services\Identity\IOT.Identity\Program.cs:line 101
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:01:30.834 +03:30  INF]  HTTP POST /api/Authenticate/Register responded 200 in 5869.8857 ms
+ Ip Address Client: ::1 RequestScheme : http RequestHost : localhost:6005 RequestMethod : POST RequestPath : /api/Authenticate/Register StatusCode : 200[2023-05-05 21:01:36.186 +03:30 f6b543b5-61b0-4c2b-8111-e2420683f284 INF]  Get State Key:
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:01:36.186 +03:30 f6b543b5-61b0-4c2b-8111-e2420683f284 INF]  7adec120-79f0-4154-80ed-01985139f32bcatalog
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:01:40.549 +03:30 f6b543b5-61b0-4c2b-8111-e2420683f284 ERR]  HTTP GET /api/Authenticate/string responded 500 in 4441.5500 ms
+Dapr.DaprException: State operation failed: the Dapr endpoint indicated a failure. See InnerException for details.
+ ---> Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.")
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   at IOT.Identity.Repositories.PermissionStateRepository.GetUserPermissionsState(Guid userId) in P:\Platform\src\services\Identity\IOT.Identity\Repositories\PermissionStateRepository.cs:line 45
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in P:\Platform\src\services\Identity\IOT.Identity\Program.cs:line 101
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+ Ip Address Client: ::1 RequestScheme : http RequestHost : localhost:6005 RequestMethod : GET RequestPath : /api/Authenticate/string StatusCode : 500[2023-05-05 21:01:40.671 +03:30 f6b543b5-61b0-4c2b-8111-e2420683f284 ERR]  An unhandled exception has occurred while executing the request.
+Dapr.DaprException: State operation failed: the Dapr endpoint indicated a failure. See InnerException for details.
+ ---> Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.")
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   at IOT.Identity.Repositories.PermissionStateRepository.GetUserPermissionsState(Guid userId) in P:\Platform\src\services\Identity\IOT.Identity\Repositories\PermissionStateRepository.cs:line 45
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in P:\Platform\src\services\Identity\IOT.Identity\Program.cs:line 101
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:02:09.107 +03:30 12e061f4-b737-4f9d-9f28-077a5ae529d4 INF]  Get State Key:
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:02:09.108 +03:30 12e061f4-b737-4f9d-9f28-077a5ae529d4 INF]  7adec120-79f0-4154-80ed-01985139f32bcatalog
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:02:09.209 +03:30 12e061f4-b737-4f9d-9f28-077a5ae529d4 ERR]  HTTP GET /api/Authenticate/string responded 500 in 6714.7985 ms
+Dapr.DaprException: State operation failed: the Dapr endpoint indicated a failure. See InnerException for details.
+ ---> Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.")
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   at IOT.Identity.Repositories.PermissionStateRepository.GetUserPermissionsState(Guid userId) in P:\Platform\src\services\Identity\IOT.Identity\Repositories\PermissionStateRepository.cs:line 45
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in P:\Platform\src\services\Identity\IOT.Identity\Program.cs:line 101
+ Ip Address Client: ::1 RequestScheme : http RequestHost : localhost:6005 RequestMethod : GET RequestPath : /api/Authenticate/string StatusCode : 500[2023-05-05 21:02:09.290 +03:30 12e061f4-b737-4f9d-9f28-077a5ae529d4 ERR]  An unhandled exception has occurred while executing the request.
+Dapr.DaprException: State operation failed: the Dapr endpoint indicated a failure. See InnerException for details.
+ ---> Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.")
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   at IOT.Identity.Repositories.PermissionStateRepository.GetUserPermissionsState(Guid userId) in P:\Platform\src\services\Identity\IOT.Identity\Repositories\PermissionStateRepository.cs:line 45
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in P:\Platform\src\services\Identity\IOT.Identity\Program.cs:line 101
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:03:33.288 +03:30 b67f0972-5a3d-4d06-89d4-9db7478f5629 INF]  Get State Key:
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:03:33.288 +03:30 b67f0972-5a3d-4d06-89d4-9db7478f5629 INF]  7adec120-79f0-4154-80ed-01985139f32bcatalog
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:03:33.376 +03:30 b67f0972-5a3d-4d06-89d4-9db7478f5629 ERR]  HTTP GET /api/Authenticate/string responded 500 in 1412.5444 ms
+Dapr.DaprException: State operation failed: the Dapr endpoint indicated a failure. See InnerException for details.
+ ---> Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.")
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   at IOT.Identity.Repositories.PermissionStateRepository.GetUserPermissionsState(Guid userId) in P:\Platform\src\services\Identity\IOT.Identity\Repositories\PermissionStateRepository.cs:line 45
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in P:\Platform\src\services\Identity\IOT.Identity\Program.cs:line 101
+ Ip Address Client: ::1 RequestScheme : http RequestHost : localhost:6005 RequestMethod : GET RequestPath : /api/Authenticate/string StatusCode : 500[2023-05-05 21:03:33.447 +03:30 b67f0972-5a3d-4d06-89d4-9db7478f5629 ERR]  An unhandled exception has occurred while executing the request.
+Dapr.DaprException: State operation failed: the Dapr endpoint indicated a failure. See InnerException for details.
+ ---> Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.")
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   at IOT.Identity.Repositories.PermissionStateRepository.GetUserPermissionsState(Guid userId) in P:\Platform\src\services\Identity\IOT.Identity\Repositories\PermissionStateRepository.cs:line 45
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in P:\Platform\src\services\Identity\IOT.Identity\Program.cs:line 101
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:05:02.073 +03:30  INF]  Now listening on: http://localhost:6005
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 21:05:02.078 +03:30  INF]  Application started. Press Ctrl+C to shut down.
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 21:05:02.078 +03:30  INF]  Hosting environment: Development
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 21:05:02.078 +03:30  INF]  Content root path: P:\Platform\src\services\Identity\IOT.Identity
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath :  StatusCode : [2023-05-05 21:05:19.769 +03:30 19e35296-d3cd-4e57-ae62-2dc10e88c697 INF]  Get State Key:
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:05:19.777 +03:30 19e35296-d3cd-4e57-ae62-2dc10e88c697 INF]  7adec120-79f0-4154-80ed-01985139f32bcatalog
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : [2023-05-05 21:05:24.354 +03:30 19e35296-d3cd-4e57-ae62-2dc10e88c697 ERR]  HTTP GET /api/Authenticate/string responded 500 in 8471.7617 ms
+Dapr.DaprException: State operation failed: the Dapr endpoint indicated a failure. See InnerException for details.
+ ---> Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.")
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   at IOT.Identity.Repositories.PermissionStateRepository.GetUserPermissionsState(Guid userId) in P:\Platform\src\services\Identity\IOT.Identity\Repositories\PermissionStateRepository.cs:line 45
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in P:\Platform\src\services\Identity\IOT.Identity\Program.cs:line 101
+ Ip Address Client: ::1 RequestScheme : http RequestHost : localhost:6005 RequestMethod : GET RequestPath : /api/Authenticate/string StatusCode : 500[2023-05-05 21:05:24.390 +03:30 19e35296-d3cd-4e57-ae62-2dc10e88c697 ERR]  An unhandled exception has occurred while executing the request.
+Dapr.DaprException: State operation failed: the Dapr endpoint indicated a failure. See InnerException for details.
+ ---> Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error connecting to subchannel.", DebugException="System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it.")
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.SocketConnectivitySubchannelTransport.TryConnectAsync(ConnectContext context)
+   --- End of inner exception stack trace ---
+   at Grpc.Net.Client.Balancer.Internal.ConnectionManager.PickAsync(PickContext context, Boolean waitForReady, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Balancer.Internal.BalancerHttpHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Grpc.Net.Client.Internal.GrpcCall`2.RunCall(HttpRequestMessage request, Nullable`1 timeout)
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Dapr.Client.DaprClientGrpc.GetStateAsync[TValue](String storeName, String key, Nullable`1 consistencyMode, IReadOnlyDictionary`2 metadata, CancellationToken cancellationToken)
+   at IOT.Identity.Repositories.PermissionStateRepository.GetUserPermissionsState(Guid userId) in P:\Platform\src\services\Identity\IOT.Identity\Repositories\PermissionStateRepository.cs:line 45
+   at IOT.Identity.Controllers.AuthenticateController.Ok(String userName) in P:\Platform\src\services\Identity\IOT.Identity\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Program.<>c.<<<Main>$>b__0_1>d.MoveNext() in P:\Platform\src\services\Identity\IOT.Identity\Program.cs:line 101
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ Ip Address Client:  RequestScheme :  RequestHost :  RequestMethod :  RequestPath : /api/Authenticate/string StatusCode : 

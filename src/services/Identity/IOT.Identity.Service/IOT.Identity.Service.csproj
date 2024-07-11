@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="6.1.0" />
+    <PackageReference Include="Dapr.AspNetCore" Version="1.10.0" />
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Buildin.Blocks.Application.Security\Buildin.Blocks.Application.Security.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Buildin.Blocks.Application\Building.Blocks.Application.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Building.Block.Core\Building.Blocks.Core.csproj" />
+    <ProjectReference Include="..\IOT.Identity.Domain.Core\IOT.Identity.Domain.Core.csproj" />
+    <ProjectReference Include="..\IOT.Identity.Infrastructure.Database\IOT.Identity.Infrastructure.Database.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CQRS\ChangeLockReason\Queries\" />
+    <Folder Include="CQRS\Token\Queries\" />
+    <Folder Include="CQRS\User\Query\" />
+    <Folder Include="CQRS\User\Validator\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,5 @@
+P:\Platform\src\services\Identity\IOT.Identity.Service\obj\Release\net7.0\IOT.Identity.Service.csproj.AssemblyReference.cache
+P:\Platform\src\services\Identity\IOT.Identity.Service\obj\Release\net7.0\IOT.Identity.Service.GeneratedMSBuildEditorConfig.editorconfig
+P:\Platform\src\services\Identity\IOT.Identity.Service\obj\Release\net7.0\IOT.Identity.Service.AssemblyInfoInputs.cache
+P:\Platform\src\services\Identity\IOT.Identity.Service\obj\Release\net7.0\IOT.Identity.Service.AssemblyInfo.cs
+P:\Platform\src\services\Identity\IOT.Identity.Service\obj\Release\net7.0\IOT.Identity.Service.csproj.CoreCompileInputs.cache
